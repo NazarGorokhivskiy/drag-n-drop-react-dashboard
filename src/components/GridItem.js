@@ -19,6 +19,25 @@ const CloseButton = ({ onClick }) => (
   </div>
 );
 
+const DraggableArea = ({ onMouseDown, onMouseUp, onTouchEnd }) => (
+  <div
+    style={{
+      position: "absolute",
+      top: 12,
+      right: 48,
+      left: 8,
+      padding: 4,
+      cursor: "pointer",
+      backgroundColor: "lightpink",
+    }}
+    onMouseDown={onMouseDown}
+    onMouseUp={onMouseUp}
+    onTouchEnd={onTouchEnd}
+  >
+    Click here to drag
+  </div>
+);
+
 const GridItem = React.forwardRef(
   (
     {
@@ -42,22 +61,11 @@ const GridItem = React.forwardRef(
         <CloseButton onClick={onClose} />
         {content}
         {props.children}
-        <div
-          style={{
-            position: "absolute",
-            bottom: 8,
-            right: 32,
-            left: 8,
-            padding: 4,
-            cursor: "pointer",
-            backgroundColor: "lightpink",
-          }}
+        <DraggableArea
           onMouseDown={onMouseDown}
           onMouseUp={onMouseUp}
           onTouchEnd={onTouchEnd}
-        >
-          Click here to drag
-        </div>
+        />
       </div>
     );
   }

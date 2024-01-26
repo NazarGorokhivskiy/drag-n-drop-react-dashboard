@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CardItem({ children }) {
+export default function CardItem({ id, children }) {
   return (
     <div
       style={{
@@ -9,6 +9,7 @@ export default function CardItem({ children }) {
         display: "flex",
         flexDirection: "column",
         padding: 20,
+        paddingTop: 32,
         borderRadius: 8,
         background: "white",
         boxSizing: "border-box",
@@ -22,7 +23,7 @@ export default function CardItem({ children }) {
           flex: 1,
         }}
       >
-        <h3>Dummy charts</h3>
+        <h3>Card # {id}</h3>
         {children}
       </div>
     </div>
