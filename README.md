@@ -1,3 +1,6 @@
+# Preview
+![drag-n-drop-dashboard](https://github.com/NazarGorokhivskiy/drag-n-drop-react-dashboard/assets/32966969/6dceb694-d598-40d6-a7af-86dfd7a6a676)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
