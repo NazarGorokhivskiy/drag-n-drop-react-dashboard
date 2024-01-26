@@ -1,0 +1,8 @@
+.gridItem .react-resizable-handle  {
+  background-image: url('../assets/resize-icon.png');
+  background-size: contain;
+}
+
+.gridItem .react-resizable-handle::after {
+  display: none;
+}
